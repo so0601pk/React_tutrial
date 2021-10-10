@@ -1,26 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Article from "./component/Article";
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          React入門の動画で環境構築を実施ました。
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Article
+        title={'新・日本一わかりやすいReact入門基礎編4'}
+        content={'今日のトピックスはpropsについて'}
+      />
+      <Article
+        title={'新・日本一わかりやすいReact入門基礎編5'}
+        content={'今日のトピックスはuseStateの受け渡しについて'}
+      />
+      <Article
+        title={'新・日本一わかりやすいReact入門基礎編6'}
+        content={'今日のトピックスはuseEffectについて'}
+      />
     </div>
   );
 }
