@@ -1,5 +1,5 @@
 const Title = (props) => {
-    return <h2>{PushSubscriptionOptions.title}</h2>
+    return <h2>{props.title}</h2>
 };
 
 export default Title;
